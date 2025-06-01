@@ -37,7 +37,18 @@
 
 ---
 
-## Pattern 4: Pathfinding in Matrix
+## Pattern 4: In-place Matrix Modification
+
+| Problem Name                        | GitHub Solution                                             | LeetCode Link                                               | Difficulty |
+|------------------------------------|-------------------------------------------------------------|--------------------------------------------------------------|------------|
+| Set Matrix Zeroes                  | [Solution](https://github.com/your-username/your-repo/blob/main/matrix/setMatrixZeroes.java) | [Link](https://leetcode.com/problems/set-matrix-zeroes/)     | Medium     |
+| Game of Life                       | [Solution](https://github.com/your-username/your-repo/blob/main/matrix/gameOfLife.java) | [Link](https://leetcode.com/problems/game-of-life/)          | Medium     |
+| Rotate Image In-Place              | [Solution](https://github.com/your-username/your-repo/blob/main/matrix/rotateInPlace.java) | [Link](https://leetcode.com/problems/rotate-image/)          | Medium     |
+| Spiral Fill Matrix (Construction)  | [Solution](https://github.com/your-username/your-repo/blob/main/matrix/spiralFillMatrix.java) | [Link](https://leetcode.com/problems/spiral-matrix-ii/)      | Medium     |
+
+---
+
+## Pattern 5: Pathfinding in Matrix
 
 | Problem Name                        | GitHub Solution                                             | LeetCode Link                                               | Difficulty |
 |------------------------------------|-------------------------------------------------------------|--------------------------------------------------------------|------------|
@@ -46,16 +57,5 @@
 | Surrounded Regions (DFS/BFS)       | [Solution](https://github.com/your-username/your-repo/blob/main/matrix/surroundedRegions.java) | [Link](https://leetcode.com/problems/surrounded-regions/)    | Medium     |
 | Shortest Path in Binary Matrix     | [Solution](https://github.com/your-username/your-repo/blob/main/matrix/shortestBinaryPath.java) | [Link](https://leetcode.com/problems/shortest-path-in-binary-matrix/) | Medium     |
 | Word Search (DFS)                  | [Solution](https://github.com/your-username/your-repo/blob/main/matrix/wordSearch.java) | [Link](https://leetcode.com/problems/word-search/)           | Medium     |
-
----
-
-## Pattern 5: In-place Matrix Modification
-
-| Problem Name                        | GitHub Solution                                             | LeetCode Link                                               | Difficulty |
-|------------------------------------|-------------------------------------------------------------|--------------------------------------------------------------|------------|
-| Set Matrix Zeroes                  | [Solution](https://github.com/your-username/your-repo/blob/main/matrix/setMatrixZeroes.java) | [Link](https://leetcode.com/problems/set-matrix-zeroes/)     | Medium     |
-| Game of Life                       | [Solution](https://github.com/your-username/your-repo/blob/main/matrix/gameOfLife.java) | [Link](https://leetcode.com/problems/game-of-life/)          | Medium     |
-| Rotate Image In-Place              | [Solution](https://github.com/your-username/your-repo/blob/main/matrix/rotateInPlace.java) | [Link](https://leetcode.com/problems/rotate-image/)          | Medium     |
-| Spiral Fill Matrix (Construction)  | [Solution](https://github.com/your-username/your-repo/blob/main/matrix/spiralFillMatrix.java) | [Link](https://leetcode.com/problems/spiral-matrix-ii/)      | Medium     |
 
 ---

@@ -151,4 +151,3 @@ A curated list of the most important and frequently asked **Tree problems** on L
 
 ---
 
-Would you like me to help you with solutions or Java code templates for these patterns too?

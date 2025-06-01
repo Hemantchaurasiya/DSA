@@ -4,7 +4,7 @@
 |------------------|---------------------|
 | Arrays           | [Arrays](https://github.com/Hemantchaurasiya/DSA/blob/main/readme/arrays.md)   |
 | Hashmaps      | [Hashmaps](https://github.com/Hemantchaurasiya/DSA/blob/main/readme/hashmaps.md)   |
-| wo Pointers  | [Two Pointers](https://github.com/Hemantchaurasiya/DSA/blob/main/readme/Two%20Pointers.md) |
+| Two Pointers  | [Two Pointers](https://github.com/Hemantchaurasiya/DSA/blob/main/readme/Two%20Pointers.md) |
 | Sliding Window| [Sliding Window](https://github.com/Hemantchaurasiya/DSA/blob/main/readme/sliding%20window.md) |
 | Binary Search | [Binary Search](https://github.com/Hemantchaurasiya/DSA/blob/main/readme/binary%20search.md) |
 | Prefix Sum    | [Prefix Sum](https://github.com/Hemantchaurasiya/DSA/blob/main/readme/prefix%20sum.md) |

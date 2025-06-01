@@ -85,10 +85,3 @@ Mastering backtracking involves recognizing recurring patterns in problems. This
 - **Draw Recursion Trees**: For difficult problems, visualize choices to understand state transitions.
 
 ---
-
-## 🚀 Want Solutions?
-
-Each `[Solution](#)` is a placeholder. If you want a **Java solution notebook** for any pattern/problem, I can generate it for you.
-
----
-

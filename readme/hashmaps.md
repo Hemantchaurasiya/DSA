@@ -1,6 +1,6 @@
 # ✅ HashMap Patterns with Key Interview Problems
 
-This guide contains categorized HashMap-based patterns commonly seen in technical interviews, with LeetCode links and GitHub placeholders for solutions.
+This guide contains categorized HashMap-based patterns commonly seen in technical interviews, with LeetCode links and GitHub links for solutions.
 
 ---
 
@@ -87,5 +87,3 @@ This guide contains categorized HashMap-based patterns commonly seen in technica
 
 ---
 
-## ✅ Total Problems: ~35  
-You can now build a GitHub repo with folders by pattern and keep solution files inside. Would you like a folder/file structure suggestion for this repo too?
