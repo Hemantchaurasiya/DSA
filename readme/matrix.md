@@ -1,59 +1,98 @@
-# ✅ Matrix Patterns with Key Interview Problems
+# ✅ HashMap Patterns with Key Interview Problems
+
+This guide contains categorized HashMap-based patterns commonly seen in technical interviews, with LeetCode links and GitHub links for solutions.
 
 ---
 
-## Pattern 1: Matrix Traversals
+## 🧠 Pattern 1: Frequency Counter
 
-| Problem Name                 | GitHub Solution                                             | LeetCode Link                                         | Difficulty |
-|-----------------------------|-------------------------------------------------------------|------------------------------------------------------|------------|
-| Matrix Basic Traversal       | [Solution](https://github.com/Hemantchaurasiya/DSA/blob/main/matrix/matrixBasicTraversal.md) | [Link](https://leetcode.com/problems/reshape-the-matrix/) | Easy       |
-| Diagonal Traversal           | [Solution](https://github.com/Hemantchaurasiya/DSA/blob/main/matrix/diagonalTraversal.md) | [Link](https://leetcode.com/problems/diagonal-traverse/)  | Medium     |
-| Spiral Traversal of a Matrix | [Solution](https://github.com/Hemantchaurasiya/DSA/blob/main/matrix/spiralMatrix.md) | [Link](https://leetcode.com/problems/spiral-matrix/)       | Medium     |
-| Boundary Traversal           | [Solution](https://github.com/Hemantchaurasiya/DSA/blob/main/matrix/boundaryTraversal.md) | [Link](https://practice.geeksforgeeks.org/problems/boundary-traversal-of-binary-tree/1) | Medium     |
-| Wave Traversal               | [Solution](https://github.com/Hemantchaurasiya/DSA/blob/main/matrix/waveTraversal.md) | [Link](https://practice.geeksforgeeks.org/problems/wave-traversal-of-matrix/0) | Easy       |
-| Diagonal Zigzag Traversal    | [Solution](https://github.com/Hemantchaurasiya/DSA/blob/main/matrix/diagonalZigzagTraversal.md) | [Link](https://leetcode.com/problems/diagonal-traverse-ii/) | Medium     |
+| #  | Problem Name                 | GitHub Solution                                                                 | LeetCode Link                                                         | Difficulty |
+|----|-----------------------------|----------------------------------------------------------------------------------|-----------------------------------------------------------------------|------------|
+| 1  | Valid Anagram               | [Solution](https://github.com/Hemantchaurasiya/DSA/blob/main/hashmaps/validAnagram.md)               | [Link](https://leetcode.com/problems/valid-anagram/)                  | Easy       |
+| 2  | Group Anagrams              | [Solution](https://github.com/Hemantchaurasiya/DSA/blob/main/hashmaps/groupAnagrams.md)              | [Link](https://leetcode.com/problems/group-anagrams/)                 | Medium     |
+| 3  | Top K Frequent Elements     | [Solution](https://github.com/Hemantchaurasiya/DSA/blob/main/hashmaps/topKFrequentElements.md)       | [Link](https://leetcode.com/problems/top-k-frequent-elements/)        | Medium     |
+| 4  | Sort Characters By Frequency | [Solution](https://github.com/Hemantchaurasiya/DSA/blob/main/hashmaps/sortCharactersByFrequency.md) | [Link](https://leetcode.com/problems/sort-characters-by-frequency/)   | Medium     |
 
 ---
 
-## Pattern 2: Matrix Transformation Patterns
+## 🧠 Pattern 2: Pair Sum Using HashMap
 
-| Problem Name              | GitHub Solution                                             | LeetCode Link                                      | Difficulty |
-|--------------------------|-------------------------------------------------------------|---------------------------------------------------|------------|
-| Matrix Transpose         | [Solution](https://github.com/Hemantchaurasiya/DSA/blob/main/matrix/matrixTranspose.md) | [Link](https://leetcode.com/problems/transpose-matrix/) | Easy       |
-| Matrix Rotation (90°)    | [Solution](https://github.com/Hemantchaurasiya/DSA/blob/main/matrix/matrixRotate.md) | [Link](https://leetcode.com/problems/rotate-image/)      | Medium     |
-| Matrix Rotation (180°)   | [Solution](https://github.com/Hemantchaurasiya/DSA/blob/main/matrix/matrixRotate180.md) | [Link](https://leetcode.com/problems/rotate-image/) (apply twice) | Medium     |
-| Matrix Rotation (270°)   | [Solution](https://github.com/Hemantchaurasiya/DSA/blob/main/matrix/matrixRotate270.md) | [Link](https://leetcode.com/problems/rotate-image/) (apply thrice) | Medium     |
-| Flip Horizontal/Vertical | [Solution](https://github.com/Hemantchaurasiya/DSA/blob/main/matrix/flipMatrix.md) | [Link](https://leetcode.com/problems/flipping-an-image/) | Easy       |
+| #  | Problem Name                     | GitHub Solution                                                                 | LeetCode Link                                                                 | Difficulty |
+|----|----------------------------------|----------------------------------------------------------------------------------|------------------------------------------------------------------------------|------------|
+| 1  | Two Sum                          | [Solution](https://github.com/Hemantchaurasiya/DSA/blob/main/hashmaps/twoSum.md)                          | [Link](https://leetcode.com/problems/two-sum/)                              | Easy       |
+| 2  | Two Sum II - Input Array Is Sorted | [Solution](https://github.com/Hemantchaurasiya/DSA/blob/main/hashmaps/twoSumIIInputArrayIsSorted.md) | [Link](https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/)     | Easy       |
+| 3  | 4Sum                             | [Solution](https://github.com/Hemantchaurasiya/DSA/blob/main/hashmaps/fourSum.md)                         | [Link](https://leetcode.com/problems/4sum/)                                 | Medium     |
 
 ---
 
-## Pattern 3: Matrix Search Patterns
+## 🧠 Pattern 3: Subarray Sum Using Prefix Sum + HashMap
 
-| Problem Name                          | GitHub Solution                                             | LeetCode Link                                               | Difficulty |
-|--------------------------------------|-------------------------------------------------------------|--------------------------------------------------------------|------------|
-| Search in Sorted Matrix I            | [Solution](https://github.com/Hemantchaurasiya/DSA/blob/main/matrix/searchMatrix1.md) | [Link](https://leetcode.com/problems/search-a-2d-matrix/)    | Medium     |
-| Search in Sorted Matrix II           | [Solution](https://github.com/Hemantchaurasiya/DSA/blob/main/matrix/searchMatrix2.md) | [Link](https://leetcode.com/problems/search-a-2d-matrix-ii/) | Medium     |
-| Count Occurrences in Sorted Matrix   | [Solution](https://github.com/Hemantchaurasiya/DSA/blob/main/matrix/countOccurrences.md) | [Link](https://practice.geeksforgeeks.org/problems/count-occurences-of-number-in-a-sorted-matrix/1) | Medium     |
-
----
-
-## Pattern 4: In-place Matrix Modification
-
-| Problem Name                        | GitHub Solution                                             | LeetCode Link                                               | Difficulty |
-|------------------------------------|-------------------------------------------------------------|--------------------------------------------------------------|------------|
-| Set Matrix Zeroes                  | [Solution](https://github.com/Hemantchaurasiya/DSA/blob/main/matrix/setMatrixZeroes.md) | [Link](https://leetcode.com/problems/set-matrix-zeroes/)     | Medium     |
-| Game of Life                       | [Solution](https://github.com/Hemantchaurasiya/DSA/blob/main/matrix/gameOfLife.md) | [Link](https://leetcode.com/problems/game-of-life/)          | Medium     |
-| Rotate Image In-Place              | [Solution](https://github.com/Hemantchaurasiya/DSA/blob/main/matrix/rotateInPlace.md) | [Link](https://leetcode.com/problems/rotate-image/)          | Medium     |
-| Spiral Fill Matrix (Construction)  | [Solution](https://github.com/Hemantchaurasiya/DSA/blob/main/matrix/spiralFillMatrix.md) | [Link](https://leetcode.com/problems/spiral-matrix-ii/)      | Medium     |
+| #  | Problem Name                     | GitHub Solution                                                                 | LeetCode Link                                                                 | Difficulty |
+|----|----------------------------------|----------------------------------------------------------------------------------|------------------------------------------------------------------------------|------------|
+| 1  | Subarray Sum Equals K           | [Solution](https://github.com/Hemantchaurasiya/DSA/blob/main/hashmaps/subarraySumEqualsK.md)           | [Link](https://leetcode.com/problems/subarray-sum-equals-k/)                | Medium     |
+| 2  | Continuous Subarray Sum         | [Solution](https://github.com/Hemantchaurasiya/DSA/blob/main/hashmaps/continuousSubarraySum.md)         | [Link](https://leetcode.com/problems/continuous-subarray-sum/)              | Medium     |
+| 3  | Binary Subarrays With Sum       | [Solution](https://github.com/Hemantchaurasiya/DSA/blob/main/hashmaps/binarySubarraysWithSum.md)       | [Link](https://leetcode.com/problems/binary-subarrays-with-sum/)            | Medium     |
+| 4  | Subarrays with K Different Integers | [Solution](https://github.com/Hemantchaurasiya/DSA/blob/main/hashmaps/subarraysWithKDifferentIntegers.md) | [Link](https://leetcode.com/problems/subarrays-with-k-different-integers/) | Hard       |
+| 5  | Find Pivot Index                | [Solution](https://github.com/Hemantchaurasiya/DSA/blob/main/hashmaps/findPivotIndex.md)                | [Link](https://leetcode.com/problems/find-pivot-index/)                     | Easy       |
 
 ---
 
-## Pattern 5: Pathfinding in Matrix
+## 🧠 Pattern 4: Sliding Window + HashMap
 
-| Problem Name                        | GitHub Solution                                             | LeetCode Link                                               | Difficulty |
-|------------------------------------|-------------------------------------------------------------|--------------------------------------------------------------|------------|
-| Number of Islands                  | [Solution](https://github.com/Hemantchaurasiya/DSA/blob/main/matrix/numIslands.md) | [Link](https://leetcode.com/problems/number-of-islands/)     | Medium     |
-| Flood Fill                         | [Solution](https://github.com/Hemantchaurasiya/DSA/blob/main/matrix/floodFill.md) | [Link](https://leetcode.com/problems/flood-fill/)            | Easy       |
-| Surrounded Regions (DFS/BFS)       | [Solution](https://github.com/Hemantchaurasiya/DSA/blob/main/matrix/surroundedRegions.md) | [Link](https://leetcode.com/problems/surrounded-regions/)    | Medium     |
-| Shortest Path in Binary Matrix     | [Solution](https://github.com/Hemantchaurasiya/DSA/blob/main/matrix/shortestBinaryPath.md) | [Link](https://leetcode.com/problems/shortest-path-in-binary-matrix/) | Medium     |
-| Word Search (DFS)                  | [Solution](https://github.com/Hemantchaurasiya/DSA/blob/main/matrix/wordSearch.md) | [Link](https://leetcode.com/problems/word-search/)           | Medium     |
+| #  | Problem Name                                | GitHub Solution                                                                 | LeetCode Link                                                                                     | Difficulty |
+|----|---------------------------------------------|----------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------|------------|
+| 1  | Longest Substring Without Repeating Characters | [Solution](https://github.com/Hemantchaurasiya/DSA/blob/main/hashmaps/longestSubstringWithoutRepeatingCharacters.md) | [Link](https://leetcode.com/problems/longest-substring-without-repeating-characters/)             | Medium     |
+| 2  | Minimum Window Substring                   | [Solution](https://github.com/Hemantchaurasiya/DSA/blob/main/hashmaps/minimumWindowSubstring.md)                   | [Link](https://leetcode.com/problems/minimum-window-substring/)                                   | Hard       |
+| 3  | Permutation in String                      | [Solution](https://github.com/Hemantchaurasiya/DSA/blob/main/hashmaps/permutationInString.md)                      | [Link](https://leetcode.com/problems/permutation-in-string/)                                      | Medium     |
+| 4  | Find All Anagrams in a String              | [Solution](https://github.com/Hemantchaurasiya/DSA/blob/main/hashmaps/findAllAnagramsInAString.md)              | [Link](https://leetcode.com/problems/find-all-anagrams-in-a-string/)                              | Medium     |
+
+---
+
+## 🧠 Pattern 5: HashMap + PriorityQueue
+
+| #  | Problem Name              | GitHub Solution                                                                 | LeetCode Link                                                     | Difficulty |
+|----|---------------------------|----------------------------------------------------------------------------------|------------------------------------------------------------------|------------|
+| 1  | Top K Frequent Words     | [Solution](https://github.com/Hemantchaurasiya/DSA/blob/main/hashmaps/topKFrequentWords.md)     | [Link](https://leetcode.com/problems/top-k-frequent-words/)      | Medium     |
+| 2  | Task Scheduler           | [Solution](https://github.com/Hemantchaurasiya/DSA/blob/main/hashmaps/taskScheduler.md)         | [Link](https://leetcode.com/problems/task-scheduler/)            | Medium     |
+
+---
+
+## 🧠 Pattern 6: Design with HashMap
+
+| #  | Problem Name     | GitHub Solution                                                                 | LeetCode Link                                           | Difficulty |
+|----|------------------|----------------------------------------------------------------------------------|----------------------------------------------------------|------------|
+| 1  | Design Twitter   | [Solution](https://github.com/Hemantchaurasiya/DSA/blob/main/hashmaps/designTwitter.md)   | [Link](https://leetcode.com/problems/design-twitter/)    | Medium     |
+
+---
+
+## 🧠 Pattern 8: HashMap + Count + Conditions
+
+| #  | Problem Name          | GitHub Solution                                                                 | LeetCode Link                                                     | Difficulty |
+|----|-----------------------|----------------------------------------------------------------------------------|------------------------------------------------------------------|------------|
+| 1  | Isomorphic Strings    | [Solution](https://github.com/Hemantchaurasiya/DSA/blob/main/hashmaps/isomorphicStrings.md)    | [Link](https://leetcode.com/problems/isomorphic-strings/)        | Easy       |
+| 2  | Word Pattern          | [Solution](https://github.com/Hemantchaurasiya/DSA/blob/main/hashmaps/wordPattern.md)          | [Link](https://leetcode.com/problems/word-pattern/)              | Easy       |
+| 3  | Number of Boomerangs  | [Solution](https://github.com/Hemantchaurasiya/DSA/blob/main/hashmaps/numberOfBoomerangs.md)  | [Link](https://leetcode.com/problems/number-of-boomerangs/)      | Medium     |
+
+---
+
+## 🧠 Pattern 9: Graph & Union-Find + HashMap
+
+| #  | Problem Name           | GitHub Solution                                                                 | LeetCode Link                                                   | Difficulty |
+|----|------------------------|----------------------------------------------------------------------------------|----------------------------------------------------------------|------------|
+| 1  | Evaluate Division      | [Solution](https://github.com/Hemantchaurasiya/DSA/blob/main/hashmaps/evaluateDivision.md)      | [Link](https://leetcode.com/problems/evaluate-division/)       | Medium     |
+| 2  | Accounts Merge         | [Solution](https://github.com/Hemantchaurasiya/DSA/blob/main/hashmaps/accountsMerge.md)         | [Link](https://leetcode.com/problems/accounts-merge/)          | Medium     |
+| 3  | Alien Dictionary       | [Solution](https://github.com/Hemantchaurasiya/DSA/blob/main/hashmaps/alienDictionary.md)       | [Link](https://leetcode.com/problems/alien-dictionary/)        | Hard       |
+| 4  | Reconstruct Itinerary  | [Solution](https://github.com/Hemantchaurasiya/DSA/blob/main/hashmaps/reconstructItinerary.md)  | [Link](https://leetcode.com/problems/reconstruct-itinerary/)   | Hard       |
+
+---
+
+## 🧠 Pattern 10: HashMap with Custom Key (Tuples, Encoded States)
+
+| #  | Problem Name                             | GitHub Solution                                                                 | LeetCode Link                                                                        | Difficulty |
+|----|------------------------------------------|----------------------------------------------------------------------------------|--------------------------------------------------------------------------------------|------------|
+| 1  | Submatrix Sum Equals K                  | [Solution](https://github.com/Hemantchaurasiya/DSA/blob/main/hashmaps/submatrixSumEqualsK.md)                  | [Link](https://leetcode.com/problems/submatrix-sum-equals-k/)                       | Hard       |
+| 2  | Number of Equivalent Domino Pairs       | [Solution](https://github.com/Hemantchaurasiya/DSA/blob/main/hashmaps/numberOfEquivalentDominoPairs.md)       | [Link](https://leetcode.com/problems/number-of-equivalent-domino-pairs/)            | Easy       |
+| 3  | Count Nice Pairs in an Array            | [Solution](https://github.com/Hemantchaurasiya/DSA/blob/main/hashmaps/countNicePairsInAnArray.md)            | [Link](https://leetcode.com/problems/count-nice-pairs-in-an-array/)                 | Medium     |
+| 4  | Number of Submatrices That Sum to Target | [Solution](https://github.com/Hemantchaurasiya/DSA/blob/main/hashmaps/numberOfSubmatricesThatSumToTarget.md) | [Link](https://leetcode.com/problems/number-of-submatrices-that-sum-to-target/)     | Hard       |
+
+---

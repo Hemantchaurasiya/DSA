@@ -6,22 +6,22 @@ This guide covers all essential **linked list patterns** used in coding intervie
 
 ## 📊 Pattern Summary
 
-| #  | Pattern Name                          | Problems Covered |
-|----|---------------------------------------|------------------|
-| 1  | 🧠 Two Pointer (Slow & Fast)          | 3                |
-| 2  | 🔁 Linked List Reversal               | 2                |
-| 3  | 🌀 Cycle Detection & Start Node       | 2 ⚠️             |
-| 4  | 🔀 Merging & Sorting                  | 3                |
-| 5  | 🔁 Pointer Rewiring                   | 2 ⚠️             |
-| 6  | 🧩 Dummy Node Trick                   | 2                |
-| 7  | 🧩 Group Manipulation                 | 2                |
-| 8  | 🧩 Skip/Delete Nodes Pattern          | 2 ⚠️             |
-| 9  | 🧩 Flattening Linked Lists            | 2                |
-| 10 | 🧩 Length-Based Problems              | 2 ⚠️             |
-| 11 | 🔄 Palindromic / Compare Halves       | 1                |
-| 12 | 🔄 Cloning / Deep Copy                | 1                |
-| 13 | 🔄 Reordering Linked List             | 1                |
-| 14 | 🔄 Segregation / Partitioning         | 1                |
+| # | Pattern Name | Problems Covered |
+|---|---------------------------------------|------------------|
+| 1 | 🧠 Two Pointer (Slow & Fast) | 3 |
+| 2 | 🔁 Linked List Reversal | 2 |
+| 3 | 🌀 Cycle Detection & Start Node | 2 ⚠️ |
+| 4 | 🔀 Merging & Sorting | 3 |
+| 5 | 🔁 Pointer Rewiring | 2 ⚠️ |
+| 6 | 🧩 Dummy Node Trick | 2 |
+| 7 | 🧩 Group Manipulation | 2 |
+| 8 | 🧩 Skip/Delete Nodes Pattern | 2 ⚠️ |
+| 9 | 🧩 Flattening Linked Lists | 2 |
+| 10 | 🧩 Length-Based Problems | 2 ⚠️ |
+| 11 | 🔄 Palindromic / Compare Halves | 1 |
+| 12 | 🔄 Cloning / Deep Copy | 1 |
+| 13 | 🔄 Reordering Linked List | 1 |
+| 14 | 🔄 Segregation / Partitioning | 1 |
 
 ⚠️ Problem appears in multiple patterns where relevant.
 
@@ -31,11 +31,11 @@ This guide covers all essential **linked list patterns** used in coding intervie
 
 > Use slow and fast pointers to find middle nodes or detect cycles.
 
-| Problem Name                  | GitHub Solution | LeetCode Link | Difficulty |
-|------------------------------|------------------|----------------|------------|
-| 876. Middle of the Linked List | [Solution](https://github.com/your-username/your-repo/blob/main/linkedlist/middleOfLinkedList.java) | [Link](https://leetcode.com/problems/middle-of-the-linked-list/) | Easy |
-| 141. Linked List Cycle ⚠️     | [Solution](https://github.com/your-username/your-repo/blob/main/linkedlist/linkedListCycle.java) | [Link](https://leetcode.com/problems/linked-list-cycle/) | Easy |
-| 142. Linked List Cycle II ⚠️  | [Solution](https://github.com/your-username/your-repo/blob/main/linkedlist/linkedListCycleII.java) | [Link](https://leetcode.com/problems/linked-list-cycle-ii/) | Medium |
+| S.No. | Problem Name | GitHub Solution | LeetCode Link | Difficulty |
+|-------|------------------------------|--------------------------------------------------------------------------------------------------------|----------------|------------|
+| 1 | 876. Middle of the Linked List | [Solution](https://github.com/Hemantchaurasiya/DSA/blob/main/linkedList/middleOfTheLinkedList.md) | [Link](https://leetcode.com/problems/middle-of-the-linked-list/) | Easy |
+| 2 | 141. Linked List Cycle ⚠️ | [Solution](https://github.com/Hemantchaurasiya/DSA/blob/main/linkedList/linkedListCycle.md) | [Link](https://leetcode.com/problems/linked-list-cycle/) | Easy |
+| 3 | 142. Linked List Cycle II ⚠️ | [Solution](https://github.com/Hemantchaurasiya/DSA/blob/main/linkedList/linkedListCycleII.md) | [Link](https://leetcode.com/problems/linked-list-cycle-ii/) | Medium |
 
 ---
 
@@ -43,10 +43,10 @@ This guide covers all essential **linked list patterns** used in coding intervie
 
 > Reverse the entire list or a sublist between two nodes.
 
-| Problem Name                  | GitHub Solution | LeetCode Link | Difficulty |
-|------------------------------|------------------|----------------|------------|
-| 206. Reverse Linked List      | [Solution](https://github.com/your-username/your-repo/blob/main/linkedlist/reverseLinkedList.java) | [Link](https://leetcode.com/problems/reverse-linked-list/) | Easy |
-| 92. Reverse Linked List II    | [Solution](https://github.com/your-username/your-repo/blob/main/linkedlist/reverseLinkedListII.java) | [Link](https://leetcode.com/problems/reverse-linked-list-ii/) | Medium |
+| S.No. | Problem Name | GitHub Solution | LeetCode Link | Difficulty |
+|-------|------------------------------|-----------------------------------------------------------------------------|----------------|------------|
+| 1 | 206. Reverse Linked List | [Solution](https://github.com/Hemantchaurasiya/DSA/blob/main/linkedList/reverseLinkedList.md) | [Link](https://leetcode.com/problems/reverse-linked-list/) | Easy |
+| 2 | 92. Reverse Linked List II | [Solution](https://github.com/Hemantchaurasiya/DSA/blob/main/linkedList/reverseLinkedListII.md) | [Link](https://leetcode.com/problems/reverse-linked-list-ii/) | Medium |
 
 ---
 
@@ -54,10 +54,10 @@ This guide covers all essential **linked list patterns** used in coding intervie
 
 > Detect if a cycle exists and find its entry point.
 
-| Problem Name                  | GitHub Solution | LeetCode Link | Difficulty |
-|------------------------------|------------------|----------------|------------|
-| 141. Linked List Cycle ⚠️     | [Solution](https://github.com/your-username/your-repo/blob/main/linkedlist/linkedListCycle.java) | [Link](https://leetcode.com/problems/linked-list-cycle/) | Easy |
-| 142. Linked List Cycle II ⚠️  | [Solution](https://github.com/your-username/your-repo/blob/main/linkedlist/linkedListCycleII.java) | [Link](https://leetcode.com/problems/linked-list-cycle-ii/) | Medium |
+| S.No. | Problem Name | GitHub Solution | LeetCode Link | Difficulty |
+|-------|------------------------------|-----------------------------------------------------------------------------|----------------|------------|
+| 1 | 141. Linked List Cycle ⚠️ | [Solution](https://github.com/Hemantchaurasiya/DSA/blob/main/linkedList/linkedListCycle.md) | [Link](https://leetcode.com/problems/linked-list-cycle/) | Easy |
+| 2 | 142. Linked List Cycle II ⚠️ | [Solution](https://github.com/Hemantchaurasiya/DSA/blob/main/linkedList/linkedListCycleII.md) | [Link](https://leetcode.com/problems/linked-list-cycle-ii/) | Medium |
 
 ---
 
@@ -65,11 +65,11 @@ This guide covers all essential **linked list patterns** used in coding intervie
 
 > Merge sorted lists or sort an entire linked list using merge sort.
 
-| Problem Name                  | GitHub Solution | LeetCode Link | Difficulty |
-|------------------------------|------------------|----------------|------------|
-| 21. Merge Two Sorted Lists    | [Solution](https://github.com/your-username/your-repo/blob/main/linkedlist/mergeTwoSortedLists.java) | [Link](https://leetcode.com/problems/merge-two-sorted-lists/) | Easy |
-| 23. Merge k Sorted Lists      | [Solution](https://github.com/your-username/your-repo/blob/main/linkedlist/mergeKSortedLists.java) | [Link](https://leetcode.com/problems/merge-k-sorted-lists/) | Hard |
-| 148. Sort List                | [Solution](https://github.com/your-username/your-repo/blob/main/linkedlist/sortList.java) | [Link](https://leetcode.com/problems/sort-list/) | Medium |
+| S.No. | Problem Name | GitHub Solution | LeetCode Link | Difficulty |
+|-------|------------------------------|-----------------------------------------------------------------------|----------------|------------|
+| 1 | 21. Merge Two Sorted Lists | [Solution](https://github.com/Hemantchaurasiya/DSA/blob/main/linkedList/mergeTwoSortedLists.md) | [Link](https://leetcode.com/problems/merge-two-sorted-lists/) | Easy |
+| 2 | 23. Merge k Sorted Lists | [Solution](https://github.com/Hemantchaurasiya/DSA/blob/main/linkedList/mergeKSortedLists.md) | [Link](https://leetcode.com/problems/merge-k-sorted-lists/) | Hard |
+| 3 | 148. Sort List | [Solution](https://github.com/Hemantchaurasiya/DSA/blob/main/linkedList/sortList.md) | [Link](https://leetcode.com/problems/sort-list/) | Medium |
 
 ---
 
@@ -77,10 +77,10 @@ This guide covers all essential **linked list patterns** used in coding intervie
 
 > Modify next pointers to remove or skip nodes.
 
-| Problem Name                  | GitHub Solution | LeetCode Link | Difficulty |
-|------------------------------|------------------|----------------|------------|
-| 19. Remove Nth Node From End ⚠️ | [Solution](https://github.com/your-username/your-repo/blob/main/linkedlist/removeNthFromEnd.java) | [Link](https://leetcode.com/problems/remove-nth-node-from-end-of-list/) | Medium |
-| 82. Remove Duplicates II ⚠️    | [Solution](https://github.com/your-username/your-repo/blob/main/linkedlist/removeDuplicatesII.java) | [Link](https://leetcode.com/problems/remove-duplicates-from-sorted-list-ii/) | Medium |
+| S.No. | Problem Name | GitHub Solution | LeetCode Link | Difficulty |
+|-------|------------------------------|-------------------------------------------------------------------------|----------------|------------|
+| 1 | 19. Remove Nth Node From End ⚠️ | [Solution](https://github.com/Hemantchaurasiya/DSA/blob/main/linkedList/removeNthNodeFromEnd.md) | [Link](https://leetcode.com/problems/remove-nth-node-from-end-of-list/) | Medium |
+| 2 | 82. Remove Duplicates II ⚠️ | [Solution](https://github.com/Hemantchaurasiya/DSA/blob/main/linkedList/removeDuplicatesII.md) | [Link](https://leetcode.com/problems/remove-duplicates-from-sorted-list-ii/) | Medium |
 
 ---
 
@@ -88,10 +88,10 @@ This guide covers all essential **linked list patterns** used in coding intervie
 
 > Use a dummy node to simplify head removal or insertion.
 
-| Problem Name                  | GitHub Solution | LeetCode Link | Difficulty |
-|------------------------------|------------------|----------------|------------|
-| 83. Remove Duplicates I       | [Solution](https://github.com/your-username/your-repo/blob/main/linkedlist/removeDuplicates.java) | [Link](https://leetcode.com/problems/remove-duplicates-from-sorted-list/) | Easy |
-| 203. Remove Elements          | [Solution](https://github.com/your-username/your-repo/blob/main/linkedlist/removeElements.java) | [Link](https://leetcode.com/problems/remove-linked-list-elements/) | Easy |
+| S.No. | Problem Name | GitHub Solution | LeetCode Link | Difficulty |
+|-------|------------------------------|-----------------------------------------------------------------------|----------------|------------|
+| 1 | 83. Remove Duplicates I | [Solution](https://github.com/Hemantchaurasiya/DSA/blob/main/linkedList/removeDuplicates.md) | [Link](https://leetcode.com/problems/remove-duplicates-from-sorted-list/) | Easy |
+| 2 | 203. Remove Elements | [Solution](https://github.com/Hemantchaurasiya/DSA/blob/main/linkedList/removeElements.md) | [Link](https://leetcode.com/problems/remove-linked-list-elements/) | Easy |
 
 ---
 
@@ -99,10 +99,10 @@ This guide covers all essential **linked list patterns** used in coding intervie
 
 > Process nodes in groups (e.g., reverse k-group, rotate).
 
-| Problem Name                  | GitHub Solution | LeetCode Link | Difficulty |
-|------------------------------|------------------|----------------|------------|
-| 25. Reverse Nodes in k-Group | [Solution](https://github.com/your-username/your-repo/blob/main/linkedlist/reverseNodesInKGroup.java) | [Link](https://leetcode.com/problems/reverse-nodes-in-k-group/) | Hard |
-| 61. Rotate List              | [Solution](https://github.com/your-username/your-repo/blob/main/linkedlist/rotateList.java) | [Link](https://leetcode.com/problems/rotate-list/) | Medium |
+| S.No. | Problem Name | GitHub Solution | LeetCode Link | Difficulty |
+|-------|------------------------------|-------------------------------------------------------------------------|----------------|------------|
+| 1 | 25. Reverse Nodes in k-Group | [Solution](https://github.com/Hemantchaurasiya/DSA/blob/main/linkedList/reverseNodesInKGroup.md) | [Link](https://leetcode.com/problems/reverse-nodes-in-k-group/) | Hard |
+| 2 | 61. Rotate List | [Solution](https://github.com/Hemantchaurasiya/DSA/blob/main/linkedList/rotateList.md) | [Link](https://leetcode.com/problems/rotate-list/) | Medium |
 
 ---
 
@@ -110,10 +110,10 @@ This guide covers all essential **linked list patterns** used in coding intervie
 
 > Delete or skip specific nodes based on conditions.
 
-| Problem Name                  | GitHub Solution | LeetCode Link | Difficulty |
-|------------------------------|------------------|----------------|------------|
-| 82. Remove Duplicates II ⚠️    | [Solution](https://github.com/your-username/your-repo/blob/main/linkedlist/removeDuplicatesII.java) | [Link](https://leetcode.com/problems/remove-duplicates-from-sorted-list-ii/) | Medium |
-| 237. Delete Node              | [Solution](https://github.com/your-username/your-repo/blob/main/linkedlist/deleteNode.java) | [Link](https://leetcode.com/problems/delete-node-in-a-linked-list/) | Easy |
+| S.No. | Problem Name | GitHub Solution | LeetCode Link | Difficulty |
+|-------|------------------------------|-------------------------------------------------------------------------|----------------|------------|
+| 1 | 82. Remove Duplicates II ⚠️ | [Solution](https://github.com/Hemantchaurasiya/DSA/blob/main/linkedList/removeDuplicatesII.md) | [Link](https://leetcode.com/problems/remove-duplicates-from-sorted-list-ii/) | Medium |
+| 2 | 237. Delete Node | [Solution](https://github.com/Hemantchaurasiya/DSA/blob/main/linkedList/deleteNode.md) | [Link](https://leetcode.com/problems/delete-node-in-a-linked-list/) | Easy |
 
 ---
 
@@ -121,10 +121,10 @@ This guide covers all essential **linked list patterns** used in coding intervie
 
 > Convert nested structures to a single list.
 
-| Problem Name                  | GitHub Solution | LeetCode Link | Difficulty |
-|------------------------------|------------------|----------------|------------|
-| 430. Flatten Multilevel List | [Solution](https://github.com/your-username/your-repo/blob/main/linkedlist/flattenMultilevelDoublyLinkedList.java) | [Link](https://leetcode.com/problems/flatten-a-multilevel-doubly-linked-list/) | Medium |
-| 114. Flatten Binary Tree     | [Solution](https://github.com/your-username/your-repo/blob/main/tree/flattenBinaryTree.java) | [Link](https://leetcode.com/problems/flatten-binary-tree-to-linked-list/) | Medium |
+| S.No. | Problem Name | GitHub Solution | LeetCode Link | Difficulty |
+|-------|------------------------------|---------------------------------------------------------------------------------------------------|----------------|------------|
+| 1 | 430. Flatten Multilevel List | [Solution](https://github.com/Hemantchaurasiya/DSA/blob/main/linkedList/flattenMultilevelDoublyLinkedList.md) | [Link](https://leetcode.com/problems/flatten-a-multilevel-doubly-linked-list/) | Medium |
+| 2 | 114. Flatten Binary Tree | [Solution](https://github.com/Hemantchaurasiya/DSA/blob/main/linkedList/flattenBinaryTree.md) | [Link](https://leetcode.com/problems/flatten-binary-tree-to-linked-list/) | Medium |
 
 ---
 
@@ -132,10 +132,10 @@ This guide covers all essential **linked list patterns** used in coding intervie
 
 > Use list length or offset from end to solve.
 
-| Problem Name                  | GitHub Solution | LeetCode Link | Difficulty |
-|------------------------------|------------------|----------------|------------|
-| 160. Intersection of Lists   | [Solution](https://github.com/your-username/your-repo/blob/main/linkedlist/intersectionOfTwoLists.java) | [Link](https://leetcode.com/problems/intersection-of-two-linked-lists/) | Easy |
-| 19. Remove Nth Node ⚠️        | [Solution](https://github.com/your-username/your-repo/blob/main/linkedlist/removeNthFromEnd.java) | [Link](https://leetcode.com/problems/remove-nth-node-from-end-of-list/) | Medium |
+| S.No. | Problem Name | GitHub Solution | LeetCode Link | Difficulty |
+|-------|------------------------------|---------------------------------------------------------------------------------------|----------------|------------|
+| 1 | 160. Intersection of Lists | [Solution](https://github.com/Hemantchaurasiya/DSA/blob/main/linkedList/intersectionOfTwoLists.md) | [Link](https://leetcode.com/problems/intersection-of-two-linked-lists/) | Easy |
+| 2 | 19. Remove Nth Node ⚠️ | [Solution](https://github.com/Hemantchaurasiya/DSA/blob/main/linkedList/removeNthNodeFromEnd.md) | [Link](https://leetcode.com/problems/remove-nth-node-from-end-of-list/) | Medium |
 
 ---
 
@@ -143,9 +143,9 @@ This guide covers all essential **linked list patterns** used in coding intervie
 
 > Use stack or reverse second half to check palindrome.
 
-| Problem Name                  | GitHub Solution | LeetCode Link | Difficulty |
-|------------------------------|------------------|----------------|------------|
-| 234. Palindrome Linked List  | [Solution](https://github.com/your-username/your-repo/blob/main/linkedlist/palindromeLinkedList.java) | [Link](https://leetcode.com/problems/palindrome-linked-list/) | Easy |
+| S.No. | Problem Name | GitHub Solution | LeetCode Link | Difficulty |
+|-------|------------------------------|---------------------------------------------------------------------------|----------------|------------|
+| 1 | 234. Palindrome Linked List | [Solution](https://github.com/Hemantchaurasiya/DSA/blob/main/linkedList/palindromeLinkedList.md) | [Link](https://leetcode.com/problems/palindrome-linked-list/) | Easy |
 
 ---
 
@@ -153,9 +153,9 @@ This guide covers all essential **linked list patterns** used in coding intervie
 
 > Create a deep copy of a list with additional pointers.
 
-| Problem Name                  | GitHub Solution | LeetCode Link | Difficulty |
-|------------------------------|------------------|----------------|------------|
-| 138. Copy Random List        | [Solution](https://github.com/your-username/your-repo/blob/main/linkedlist/copyRandomList.java) | [Link](https://leetcode.com/problems/copy-list-with-random-pointer/) | Medium |
+| S.No. | Problem Name | GitHub Solution | LeetCode Link | Difficulty |
+|-------|------------------------------|-------------------------------------------------------------------|----------------|------------|
+| 1 | 138. Copy Random List | [Solution](https://github.com/Hemantchaurasiya/DSA/blob/main/linkedList/copyRandomList.md) | [Link](https://leetcode.com/problems/copy-list-with-random-pointer/) | Medium |
 
 ---
 
@@ -163,9 +163,9 @@ This guide covers all essential **linked list patterns** used in coding intervie
 
 > Reorder list as L0→Ln→L1→Ln-1→...
 
-| Problem Name                  | GitHub Solution | LeetCode Link | Difficulty |
-|------------------------------|------------------|----------------|------------|
-| 143. Reorder List            | [Solution](https://github.com/your-username/your-repo/blob/main/linkedlist/reorderList.java) | [Link](https://leetcode.com/problems/reorder-list/) | Medium |
+| S.No. | Problem Name | GitHub Solution | LeetCode Link | Difficulty |
+|-------|------------------------------|-----------------------------------------------------------------|----------------|------------|
+| 1 | 143. Reorder List | [Solution](https://github.com/Hemantchaurasiya/DSA/blob/main/linkedList/reorderList.md) | [Link](https://leetcode.com/problems/reorder-list/) | Medium |
 
 ---
 
@@ -173,6 +173,6 @@ This guide covers all essential **linked list patterns** used in coding intervie
 
 > Partition list based on value (e.g., < x and ≥ x).
 
-| Problem Name                  | GitHub Solution | LeetCode Link | Difficulty |
-|------------------------------|------------------|----------------|------------|
-| 86. Partition List           | [Solution](https://github.com/your-username/your-repo/blob/main/linkedlist/partitionList.java) | [Link](https://leetcode.com/problems/partition-list/) | Medium |
+| S.No. | Problem Name | GitHub Solution | LeetCode Link | Difficulty |
+|-------|------------------------------|----------------------------------------------------------------------|----------------|------------|
+| 1 | 86. Partition List | [Solution](https://github.com/Hemantchaurasiya/DSA/blob/main/linkedList/partitionList.md) | [Link](https://leetcode.com/problems/partition-list/) | Medium |
