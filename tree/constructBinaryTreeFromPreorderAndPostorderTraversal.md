@@ -1,4 +1,4 @@
-# DSA Revision Note: Construct Binary Tree from Preorder and Postorder Traversal
+# Construct Binary Tree from Preorder and Postorder Traversal
 
 This problem involves constructing a binary tree given its preorder and postorder traversal arrays. It is a classic problem demonstrating tree construction techniques and the importance of traversal properties.
 
