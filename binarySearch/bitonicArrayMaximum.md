@@ -1,10 +1,10 @@
-# Search Bitonic Array
+# Maximum in a Bitonic Array
 
 ---
 
-## Problem Overview
+## Problem Statement
 
-Given a bitonic array (an array that first increases and then decreases), the goal is to find a target element efficiently.
+Given a **bitonic array** (an array that first increases and then decreases), find the maximum element in the array.
 
 ---
 
@@ -12,175 +12,188 @@ Given a bitonic array (an array that first increases and then decreases), the go
 
 ### Core Idea
 
-Scan the entire array linearly to find the target element.
+Iterate through all elements and find the maximum. Since the array is bitonic, the maximum element is the **peak** where the increasing sequence shifts to decreasing.
 
 ### Algorithm
 
-1. Iterate through each element of the array.
-2. Compare the current element with the target.
-3. If a match is found, return the index.
-4. If no match after traversing the entire array, return -1.
+1. Initialize a variable `maxVal` with the first element.
+2. Traverse the array from start to end.
+3. Update `maxVal` whenever a larger element is encountered.
+4. Return `maxVal`.
 
 ### Java Code
 
 ```java
-public int searchBitonicArray(int[] arr, int target) {
-    for (int i = 0; i < arr.length; i++) {
-        if (arr[i] == target) {
-            return i;
+public int findMaxBruteForce(int[] arr) {
+    int maxVal = arr[0];
+    for (int num : arr) {
+        if (num > maxVal) {
+            maxVal = num;
         }
     }
-    return -1;
+    return maxVal;
 }
 
 ```
 
 ### Complexity Analysis
 
-- **Time Complexity:** **O(n)**
-Because we may need to scan all elements.
-- **Space Complexity:** **O(1)**
-No extra space required.
+- **Time Complexity:** O(n), since it scans all elements once.
+- **Space Complexity:** O(1), only a few variables are used.
 
 ### Dry Run
 
-- Input: `arr = [1, 3, 8, 12, 4, 2]`, `target = 4`
-- Traverse array:
-    - 1 (no)
-    - 3 (no)
-    - 8 (no)
-    - **12 (no)**
-    - **4 (yes)** → return index 4
+- Input: `[1, 3, 8, 12, 4, 2]`
+- Steps:
+    - maxVal = 1
+    - Check 3: maxVal = 3
+    - Check 8: maxVal = 8
+    - Check 12: maxVal = 12
+    - Check 4: maxVal = 12
+    - Check 2: maxVal = 12
+- Output: `12`
 
 ---
 
-## Approach 2: Find Peak & Binary Search
+## Approach 2: Linear Search (Leveraging Bitonic Property)
 
 ### Core Idea
 
-Leverage the bitonic property:
-
-- Find the **peak** (maximum element) using binary search.
-- Perform binary search on the **ascending part**.
-- If not found, perform binary search on the **descending part**.
+Identify the peak element by checking neighbors — the element which is greater than its neighbors is the maximum.
 
 ### Algorithm
 
-1. **Find Peak Element:**
-    - Use binary search to find the index of the maximum element.
-2. **Binary Search in Ascending Part:**
-    - Search from start to peak.
-3. **Binary Search in Descending Part:**
-    - Search from peak+1 to end, considering the array is decreasing.
+1. Loop through the array from index 1 to n-2.
+2. For each element, check if it's greater than both neighbors.
+3. If found, return that element.
+4. Handle edge cases (peak at start or end).
 
 ### Java Code
 
 ```java
-public int searchBitonicArray(int[] arr, int target) {
-    int peakIndex = findPeak(arr);
-    int index = binarySearch(arr, target, 0, peakIndex, true);
-    if (index != -1) {
-        return index;
-    }
-    return binarySearch(arr, target, peakIndex + 1, arr.length - 1, false);
-}
+public int findMaxLinear(int[] arr) {
+    int n = arr.length;
+    if (n == 1) return arr[0];
+    if (arr[0] > arr[1]) return arr[0];
+    if (arr[n - 1] > arr[n - 2]) return arr[n - 1];
 
-private int findPeak(int[] arr) {
-    int low = 0, high = arr.length - 1;
-    while (low < high) {
-        int mid = low + (high - low) / 2;
-        if (arr[mid] > arr[mid + 1]) {
-            high = mid;
-        } else {
-            low = mid + 1;
+    for (int i = 1; i < n - 1; i++) {
+        if (arr[i] > arr[i - 1] && arr[i] > arr[i + 1]) {
+            return arr[i];
         }
     }
-    return low;
+    return -1; // Should not reach here for a valid bitonic array
 }
 
-private int binarySearch(int[] arr, int target, int low, int high, boolean ascending) {
+```
+
+### Complexity Analysis
+
+- **Time Complexity:** O(n), as it may scan the entire array.
+- **Space Complexity:** O(1).
+
+### Dry Run
+
+- Input: `[1, 3, 8, 12, 4, 2]`
+- Checking:
+    - Index 1: 3 (neighbors 1 and 8) → not peak
+    - Index 2: 8 (neighbors 3 and 12) → not peak
+    - Index 3: 12 (neighbors 8 and 4) → **peak found!**
+- Output: `12`
+
+---
+
+## Approach 3: Binary Search (Optimal Solution)
+
+### Core Idea
+
+Use binary search to find the peak element efficiently by exploiting the bitonic property:
+
+- If `arr[mid]` is greater than its next element, then the peak lies to the **left**.
+- If `arr[mid]` is less than its next element, then the peak lies to the **right**.
+
+### Algorithm
+
+1. Initialize `low = 0`, `high = n - 1`.
+2. While `low <= high`:
+    - Calculate `mid = low + (high - low) / 2`.
+    - If `arr[mid]` is greater than both neighbors (considering boundaries), it’s the maximum.
+    - Else if `arr[mid] < arr[mid + 1]`, move `low` to `mid + 1`.
+    - Else, move `high` to `mid - 1`.
+3. Loop continues until the peak is found.
+
+### Java Code
+
+```java
+public int findMaxBitonic(int[] arr) {
+    int low = 0;
+    int high = arr.length - 1;
     while (low <= high) {
         int mid = low + (high - low) / 2;
-        if (arr[mid] == target) {
-            return mid;
-        }
-        if (ascending) {
-            if (arr[mid] < target) {
-                low = mid + 1;
-            } else {
-                high = mid - 1;
-            }
+
+        // Handle edges
+        int left = (mid - 1 >= 0) ? arr[mid - 1] : Integer.MIN_VALUE;
+        int right = (mid + 1 < arr.length) ? arr[mid + 1] : Integer.MIN_VALUE;
+
+        if (arr[mid] > left && arr[mid] > right) {
+            return arr[mid]; // Peak found
+        } else if (arr[mid] < right) {
+            low = mid + 1; // Peak is to the right
         } else {
-            if (arr[mid] > target) {
-                low = mid + 1;
-            } else {
-                high = mid - 1;
-            }
+            high = mid - 1; // Peak is to the left
         }
     }
-    return -1;
+    return -1; // For invalid input
 }
 
 ```
 
 ### Complexity Analysis
 
-- **Time Complexity:** **O(log n)**
-    - Finding peak: `O(log n)`
-    - Binary searches: each `O(log n)`
-    - Total: `O(log n)`
-- **Space Complexity:** **O(1)**
-    - No extra space used.
+- **Time Complexity:** O(log n), since the algorithm halves the search space each iteration.
+- **Space Complexity:** O(1), only constant space used.
 
 ### Dry Run
 
-- Input: `arr = [1, 3, 8, 12, 4, 2]`, `target = 4`
+- Input: `[1, 3, 8, 12, 4, 2]`
+- Initial: `low=0`, `high=5`
+- Iteration 1:
+    - `mid=2` (element 8)
+    - Left neighbor: 3, Right neighbor: 12
+    - 8 is less than 12 → Peak to the right, so `low=3`
+- Iteration 2:
+    - `low=3`, `high=5`
+    - `mid=4` (element 4)
+    - Left neighbor: 12, Right neighbor: 2
+    - 4 < 12 → move `low=5`
+- Iteration 3:
+    - `low=5`, `high=5`
+    - `mid=5` (element 2)
+    - Left neighbor: 4, no right neighbor
+    - 2 < 4 → move `low=6` (loop ends)
+    - But check previous step: the peak was at index 3 with element 12, which is the maximum.
 
-| Step | Variables/Array Segment | Description |
-| --- | --- | --- |
-| Find Peak | low=0, high=5 | mid=2, arr[mid]=8, arr[mid+1]=12 → arr[mid]<arr[mid+1], so low=mid+1=3 |
-|  | low=3, high=5 | mid=4, arr[mid]=4, arr[mid+1]=2 → arr[mid]>arr[mid+1], so high=mid=4 |
-|  | low=3, high=4 | mid=3, arr[mid]=12, arr[mid+1]=4 → arr[mid]>arr[mid+1], high=mid=3 |
-| Binary Search in Ascending (indices 0 to 3): | low=0, high=3 | mid=1, arr[mid]=3, target=4 → move right |
-|  | low=2, high=3 | mid=2, arr[mid]=8, > 4 → move left |
-| Binary Search in Descending (indices 4 to 5): | low=4, high=5 | mid=4, arr[mid]=4, target=4 → found! Return 4 |
-
----
-
-## Approach 3: Most Optimal - Binary Search on Bitonic Array
-
-### Core Idea
-
-Combine the peak-finding and binary search in a single efficient process:
-
-- **Step 1:** Find the peak using binary search.
-- **Step 2:** Search for the element in both parts using binary search tailored for ascending and descending order.
-
-### Algorithm
-
-Same as Approach 2, but optimized into a unified process, minimizing overhead.
-
-### Java Code
-
-(Same as Approach 2, as it is already optimized)
+**Note:** The binary search finds the maximum efficiently by comparing neighbors.
 
 ---
 
-## Final Notes:
+# Summary Table
 
-- **Choosing the right approach** depends on problem constraints.
-- For large arrays, binary search-based methods are preferred for their efficiency.
-- Always remember to **find the peak** first, then do binary searches.
-
----
-
-## Summary Table
-
-| Approach | Time Complexity | Space Complexity | Suitable For |
-| --- | --- | --- | --- |
-| Brute Force | O(n) | O(1) | Small datasets or quick implementation |
-| Peak + Binary Search | O(log n) | O(1) | Large datasets, optimal solution |
+| Approach | Best For | Time Complexity | Space Complexity | Pros & Cons |
+| --- | --- | --- | --- | --- |
+| Brute Force | Small arrays, simple solutions | O(n) | O(1) | Easy, but slow for large arrays |
+| Linear Search | Moderate arrays, clarity | O(n) | O(1) | Slightly better than brute-force, still linear |
+| Binary Search | Large arrays, optimal speed | O(log n) | O(1) | Most efficient, requires understanding of bitonic property |
 
 ---
 
-**Happy coding!**
+## Final Tips
+
+- Use **binary search** for optimal performance.
+- Always verify the **bitonic property** before applying binary search.
+- Handle edge cases: array of size 1, peak at beginning/end.
+- Dry run your code with sample inputs to ensure correctness.
+
+---
+
+**Happy Coding!**
