@@ -1,5 +1,3 @@
-# Graphs
-
 # Graphs – DSA Pattern Problems
 
 This repository contains categorized problems for mastering Graph-based algorithms and patterns. Each problem links to LeetCode or equivalent platforms, with placeholder GitHub URLs for your local solution links.
@@ -134,9 +132,3 @@ This repository contains categorized problems for mastering Graph-based algorith
 | 3 | Critical Connections in a Network | [GitHub](https://github.com/Hemantchaurasiya/DSA/blob/main/graphs/criticalConnectionsInANetwork.md) | [LeetCode](https://leetcode.com/problems/critical-connections-in-a-network/) | Medium |
 
 ---
-
-[Concepts](Graphs%20200bbef6d6dc8064a613eca2d4b05cbc/Concepts%2020ebbef6d6dc80d8be20f5d007141c6b.md)
-
-[**Cycle Detection in Undirected Graph Using DFS**](Graphs%20200bbef6d6dc8064a613eca2d4b05cbc/Cycle%20Detection%20in%20Undirected%20Graph%20Using%20DFS%2020dbbef6d6dc8087a44dd50e0fb8af32.md)
-
-[How many way to find shortest path in the graph?](Graphs%20200bbef6d6dc8064a613eca2d4b05cbc/How%20many%20way%20to%20find%20shortest%20path%20in%20the%20graph%2020ebbef6d6dc808ebc64e79501192005.md)
