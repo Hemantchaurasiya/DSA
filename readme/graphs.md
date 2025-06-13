@@ -135,28 +135,8 @@ This repository contains categorized problems for mastering Graph-based algorith
 
 ---
 
-> ✅ Update <YOUR_LINK> with your actual GitHub solution URLs after solving.
->
-
 [Concepts](Graphs%20200bbef6d6dc8064a613eca2d4b05cbc/Concepts%2020ebbef6d6dc80d8be20f5d007141c6b.md)
 
 [**Cycle Detection in Undirected Graph Using DFS**](Graphs%20200bbef6d6dc8064a613eca2d4b05cbc/Cycle%20Detection%20in%20Undirected%20Graph%20Using%20DFS%2020dbbef6d6dc8087a44dd50e0fb8af32.md)
 
 [How many way to find shortest path in the graph?](Graphs%20200bbef6d6dc8064a613eca2d4b05cbc/How%20many%20way%20to%20find%20shortest%20path%20in%20the%20graph%2020ebbef6d6dc808ebc64e79501192005.md)
-
-Create a detailed DSA revision note for the problem: ****.
-
-The note should be structured as a comprehensive guide suitable for interview preparation and quick revision. Please include the following for each major approach to solving the problem, starting from brute-force and moving to the most optimal solution:
-
-1. **Approach Name:** Clearly label the approach (e.g., "Brute Force," "Better Solution," "Optimized Solution,").
-2. **Core Idea:** Idea or Intution of the problem
-3. **Algorithm:** Provide a clear, step-by-step explanation of the logic and intuition behind the algorithm.
-4. **Java Code:** provide java code.
-5. **Complexity Analysis:**
-    - **Time Complexity:** State the Big O notation and briefly explain why.
-    - **Space Complexity:** State the Big O notation and briefly explain why.
-6. **Dry Run:**
-    - Provide a sample input (e.g., an array or a string).
-    - Walk through the algorithm step-by-step with this input. Use a table or a list to show how the key variables or data structures change during execution.
-
-Please ensure the final output is well-formatted using Markdown, with clear headings for each section and bolded keywords for emphasis.
