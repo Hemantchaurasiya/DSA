@@ -4,29 +4,6 @@ This guide covers all essential **linked list patterns** used in coding intervie
 
 ---
 
-## 📊 Pattern Summary
-
-| # | Pattern Name | Problems Covered |
-|---|---------------------------------------|------------------|
-| 1 | 🧠 Two Pointer (Slow & Fast) | 3 |
-| 2 | 🔁 Linked List Reversal | 2 |
-| 3 | 🌀 Cycle Detection & Start Node | 2 ⚠️ |
-| 4 | 🔀 Merging & Sorting | 3 |
-| 5 | 🔁 Pointer Rewiring | 2 ⚠️ |
-| 6 | 🧩 Dummy Node Trick | 2 |
-| 7 | 🧩 Group Manipulation | 2 |
-| 8 | 🧩 Skip/Delete Nodes Pattern | 2 ⚠️ |
-| 9 | 🧩 Flattening Linked Lists | 2 |
-| 10 | 🧩 Length-Based Problems | 2 ⚠️ |
-| 11 | 🔄 Palindromic / Compare Halves | 1 |
-| 12 | 🔄 Cloning / Deep Copy | 1 |
-| 13 | 🔄 Reordering Linked List | 1 |
-| 14 | 🔄 Segregation / Partitioning | 1 |
-
-⚠️ Problem appears in multiple patterns where relevant.
-
----
-
 ## 📌 Pattern 1: 🧠 Two Pointer (Slow & Fast)
 
 > Use slow and fast pointers to find middle nodes or detect cycles.
@@ -176,3 +153,29 @@ This guide covers all essential **linked list patterns** used in coding intervie
 | S.No. | Problem Name | GitHub Solution | LeetCode Link | Difficulty |
 |-------|------------------------------|----------------------------------------------------------------------|----------------|------------|
 | 1 | 86. Partition List | [Solution](https://github.com/Hemantchaurasiya/DSA/blob/main/linkedList/partitionList.md) | [Link](https://leetcode.com/problems/partition-list/) | Medium |
+
+
+---
+
+## 📊 Pattern Summary
+
+| # | Pattern Name | Problems Covered |
+|---|---------------------------------------|------------------|
+| 1 | 🧠 Two Pointer (Slow & Fast) | 3 |
+| 2 | 🔁 Linked List Reversal | 2 |
+| 3 | 🌀 Cycle Detection & Start Node | 2 ⚠️ |
+| 4 | 🔀 Merging & Sorting | 3 |
+| 5 | 🔁 Pointer Rewiring | 2 ⚠️ |
+| 6 | 🧩 Dummy Node Trick | 2 |
+| 7 | 🧩 Group Manipulation | 2 |
+| 8 | 🧩 Skip/Delete Nodes Pattern | 2 ⚠️ |
+| 9 | 🧩 Flattening Linked Lists | 2 |
+| 10 | 🧩 Length-Based Problems | 2 ⚠️ |
+| 11 | 🔄 Palindromic / Compare Halves | 1 |
+| 12 | 🔄 Cloning / Deep Copy | 1 |
+| 13 | 🔄 Reordering Linked List | 1 |
+| 14 | 🔄 Segregation / Partitioning | 1 |
+
+⚠️ Problem appears in multiple patterns where relevant.
+
+---
